@@ -1,3 +1,4 @@
+const eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
 class Driver {
   constructor (name, startDate) {
     this.name = name;
@@ -17,7 +18,6 @@ class Route {
 
   blocksTravelled() {
     const convertAvenue = function (avenue) {
-        const eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue'];
         return eastWest.findIndex( ave => ave===avenue);
     }
     const distanceVertical = Math.abs (this.beginningLocation.vertical - this.endingLocation.vertical);
